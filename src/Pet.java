@@ -35,6 +35,18 @@ public class Pet {
 		return cliente;
 	}
 	
+	public void imprimirPet(Pet pet) {
+		System.out.println("Dados do PET teste: ");
+		System.out.println("Nome do pet: " + pet.getNome());
+		System.out.println("Ra�a do pet: " + pet.getRaca());
+		System.out.println("Tamanho do pet: " + pet.getTamanho());
+		System.out.println("Sexo do pet: " + pet.getSexo());
+		System.out.println("Peso do pet: " + pet.getPeso() + " kg");
+		System.out.println("\n");
+		System.out.println("==========================================================");
+		System.out.println("\n");
+	}
+	
 }
 
 

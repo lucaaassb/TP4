@@ -34,6 +34,17 @@ public class PetSitter {
 		return celularPetSitter;
 	}
 	
-	
+	public void imprimirBaba(PetSitter babaPet) {
+		System.out.println("Dados do Pet Sitter teste: ");
+		System.out.print("Nome: " + babaPet.getNomePetSitter() + " ");
+		System.out.println((babaPet.getSobrenomePetSitter()));
+		System.out.println("Email: " + babaPet.getEmailPetSitter());
+		System.out.println("Endere�o: " + babaPet.getEnderecoPetSitter());
+		System.out.println("Senha: " + babaPet.getSenhaPetSitter());
+		System.out.println("Celular: " + babaPet.getCelularPetSitter());
+		System.out.println("\n");
+		System.out.println("==========================================================");
+		System.out.println("\n");
+	}
 	
 }

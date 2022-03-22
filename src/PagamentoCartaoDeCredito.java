@@ -1,6 +1,6 @@
 
 public class PagamentoCartaoDeCredito extends Pagamento{
-	private String bandeiraCartao, numeroCartao, dataValidade, titularCartao, codigoSegurança;
+	private String bandeiraCartao, numeroCartao, dataValidade, titularCartao, codigoSeguranca;
 	
 	PagamentoCartaoDeCredito(float valorServico, String bandeiraCartao, String titularCartao, String numeroCartao, String dataValidade, String codigoSeguranca) {
 		super(valorServico);
@@ -8,7 +8,7 @@ public class PagamentoCartaoDeCredito extends Pagamento{
 		this.titularCartao = titularCartao;
 		this.numeroCartao = numeroCartao;
 		this.dataValidade = dataValidade;
-		this.codigoSegurança = codigoSeguranca;
+		this.codigoSeguranca = codigoSeguranca;
 	}
 
 	public String getBandeiraCartao() {
@@ -27,8 +27,21 @@ public class PagamentoCartaoDeCredito extends Pagamento{
 		return titularCartao;
 	}
 
-	public String getCodigoSegurança() {
-		return codigoSegurança;
+	public String getCodigoSeguranca() {
+		return codigoSeguranca;
+	}
+	
+	public void imprimirCartaoDeCredito(PagamentoCartaoDeCredito pagCred) {
+		System.out.println("Dados do Cartï¿½o de Crï¿½dito teste: ");
+		System.out.printf("Preï¿½o: R$%.2f\n", pagCred.getValorServico());
+		System.out.println("Bandeira do Cartï¿½o: "+ pagCred.getBandeiraCartao());
+		System.out.println("Nome do titular do cartï¿½o: " + pagCred.getTitularCartao());
+		System.out.println("Nï¿½mero do cartï¿½o: " + pagCred.getNumeroCartao());
+		System.out.println("Data de Validade: " + pagCred.getDataValidade());
+		System.out.println("Cï¿½digo de Seguranï¿½a: " + pagCred.getCodigoSeguranca());
+		System.out.println("\n");
+		System.out.println("==========================================================");
+		System.out.println("\n");
 	}
 }
 

@@ -1,5 +1,5 @@
 public class Cliente {
-	 String nomeCliente, sobrenomeCliente, emailCliente, enderecoCliente, senhaCliente, celularCliente;
+	String nomeCliente, sobrenomeCliente, emailCliente, enderecoCliente, senhaCliente, celularCliente;
 
 	Cliente(String nomeCliente, String sobrenomeCliente, String emailCliente, String enderecoCliente, String senhaCliente, String celularCliente) {
 		this.nomeCliente = nomeCliente;
@@ -34,4 +34,16 @@ public class Cliente {
 		return celularCliente;
 	}
 	
+	public void imprimirCliente(Cliente cliente) {
+		System.out.println("Dados do usu�rio teste: ");
+		System.out.print("Nome: " + cliente.getNomeCliente() + " ");
+		System.out.println(cliente.getSobrenomeCliente());
+		System.out.println("Email: " + cliente.getEmailCliente());
+		System.out.println("Endere�o: " + cliente.getEnderecoCliente());
+		System.out.println("Senha: " + cliente.getSenhaCliente());
+		System.out.println("Celular: " + cliente.getCelularCliente());
+		System.out.println("\n");
+		System.out.println("==========================================================");
+		System.out.println("\n");
+	}
 }

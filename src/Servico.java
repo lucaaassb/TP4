@@ -23,4 +23,10 @@ public class Servico {
 		return tipoServico;
 	}
 	
+	public void imprimirServico(Servico servico) {
+		System.out.println("Dados do tipo de Servi�o: ");
+		System.out.println("Servi�o escolhido: " + servico.getTipoServico());
+		System.out.println("\n");
+	}
+	
 }
