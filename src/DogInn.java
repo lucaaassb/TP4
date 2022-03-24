@@ -2,11 +2,11 @@ import java.util.Scanner;
 
 public class DogInn {
 	public static void main(String[] args) {
-//		Cliente cliente = new Cliente("Lucas", "Soares Barros", "lucassb395@gmail.com", "Quadra TESTE Conjunto TESTE", "senha123", "(61)92222-2222");
-//		PagamentoPIX pagPIX = new PagamentoPIX(50, "436.994.620-48");
-//		PagamentoCartaoDeCredito pagCred = new PagamentoCartaoDeCredito(50, "VISA", "Lucas Soares Barros", "5307 7236 7790 6360", "09/2022", "589");
-//		Pet pet = new Pet("Pinscher", "Pequeno", "Macho", "Bob", 10);
-//		PetSitter babaPet = new PetSitter("Filipe", "Barros", "emailteste@teste.com", "Quadra teste", "123senha", "(61)91111-1111");
+//	
+//		
+//		
+//		
+//		
 //		Servico servico = new Servico(1);
 		
 
@@ -36,121 +36,121 @@ public class DogInn {
 	}
 	
 	public static void cadastrarCliente() {
-		
 		Scanner ler = new.Scanner(System.in);
+		Cliente cliente = new Cliente();
 		
 		System.out.println("Digite o nome: ");
-		this.nomeCliente = ler.nextLine();
+		cliente.nomeCliente = ler.nextLine();
 		
 		System.out.println("Digite o sobrenome: ");
-		this.sobrenomeCliente = ler.nextLine();
+		cliente.sobrenomeCliente = ler.nextLine();
 		
 		System.out.println("Digite o email: ");
-		emailCliente = ler.nextLine();
+		cliente.emailCliente = ler.nextLine();
 		
 		System.out.println("Digite o endereco: ");
-		enderecoCliente = ler.nextLine();
+		cliente.enderecoCliente = ler.nextLine();
 		
 		System.out.println("Digite a senha: ");
-		senhaCliente = ler.nextLine();
+		cliente.senhaCliente = ler.nextLine();
 		
 		System.out.println("Digite o numero de celular: ");
-		celularCliente = ler.nextLine();
+		cliente.celularCliente = ler.nextLine();
 	}
 	
 	public static void cadastrarPet() {
 		Scanner ler = new.Scanner(System.in);
-		String raca, tamanho, sexo, nome;
-		double peso;
+		Pet pet = new Pet();
 		
-		System.out.println("Digite a raça do pet: ");
-		raca = ler.nextLine();
+		System.out.println("Digite a raca do pet: ");
+		pet.raca = ler.nextLine();
 		
 		System.out.println("Digite o tamanho do pet: ");
-		tamanho = ler.nextLine();
+		pet.tamanho = ler.nextLine();
 		
 		System.out.println("Digite o sexo do pet: ");
-		sexo = ler.nextLine();
+		pet.sexo = ler.nextLine();
 		
 		System.out.println("Digite o nome do pet: ");
-		nome = ler.nextLine();
+		pet.nome = ler.nextLine();
 		
 		System.out.println("Digite o peso do pet: ");
-		peso = ler.nextDouble();
+		pet.peso = ler.nextDouble();
 	}
 	
-	public static void cadastrarCartao() {
+	public static void cadastrarCartao() { 
 		Scanner ler = new.Scanner(System.in);
-		private String bandeiraCartao, numeroCartao, dataValidade, titularCartao, codigoSeguranca;
+		PagamentoCartaoDeCredito pagCred = new PagamentoCartaoDeCredito();
 		
 		System.out.println("Digite a bandeira do cartao: ");
-		bandeiraCartao = ler.nextLine();
+		pagCred.bandeiraCartao = ler.nextLine();
 		
 		System.out.println("Digite o numero do cartao: ");
-		numeroCartao = ler.nextLine();
+		pagCred.numeroCartao = ler.nextLine();
 		
 		System.out.println("Digite a data de validade: ");
-		dataValidade = ler.nextLine();
+		pagCred.dataValidade = ler.nextLine();
 		
 		System.out.println("Digite o nome do titular do cartao: ");
-		titularCartao = ler.nextLine();
+		pagCred.titularCartao = ler.nextLine();
 		
 		System.out.println("Digite o codigo de seguranca do cartao: ");
-		codigoSeguranca = ler.nextLine();
+		pagCred.codigoSeguranca = ler.nextLine();
 	}
 	
 	public static void cadastrarSitter() {
 		Scanner ler = new.Scanner(System.in);
-		String nomePetSitter, sobrenomePetSitter, emailPetSitter, enderecoPetSitter, senhaPetSitter, celularPetSitter;
+		PetSitter babaPet = new PetSitter();
 		
 		System.out.println("Digite o nome do sitter: ");
-		nomePetSitter = ler.nextLine();
+		babaPet.nomePetSitter = ler.nextLine();
 		
 		System.out.printl("Digite o sobrenome do sitter: ");
-		sobrenomePetSitter = ler.nextLine();
+		babaPet.sobrenomePetSitter = ler.nextLine();
 		
 		System.out.println("Digite o email do sitter: ");
-		emailPetSitter = ler.nextLine();
+		babaPet.emailPetSitter = ler.nextLine();
 		
 		System.out.println("Digite o endereco do sitter: ");
-		enderecoPetSitter = ler.nextLine();
+		babaPet.enderecoPetSitter = ler.nextLine();
 		
 		System.out.println("Digite a senha: ");
-		senhaPetSitter = ler.nextLine();
+		babaPet.senhaPetSitter = ler.nextLine();
 		
 		System.out.println("Digite o numero de celular do sitter: ");
-		celularPetSitter = ler.nextLine();
+		babaPet.celularPetSitter = ler.nextLine();
 	}
 	
-	public static void cadastrarChavePIX() {
+	public static void cadastrarChavePIX() { 
 		Scanner ler = new.Scanner(System.in);
-		String pix;
+		PagamentoPIX pagPIX = new PagamentoPIX();
 		int escolhaChave;
 		
-		System.out.println("Cadastro de Chave PIX");
-		System.out.println("1 - CPF/CNPJ");
-		System.out.println("2 - E-mail");
-		System.out.println("3 - Celular");
-		System.out.println("4 - Chave aleatória");
-		escolhaChave = ler.nextLine();
-		
 		do {
-			switch(pix) {
+			System.out.println("Cadastro de Chave PIX");
+			System.out.println("1 - CPF/CNPJ");
+			System.out.println("2 - E-mail");
+			System.out.println("3 - Celular");
+			System.out.println("4 - Chave aleatï¿½ria");
+			System.out.println("Insira o nÃºmero da chave que irÃ¡ usar: ")/
+			escolhaChave = ler.nextLine();
+		
+			switch(pagPIX.pix) {
 			case 1:
 				System.out.println("Insira o seu CPF/CNPJ: ");
-				pix = ler.pix();
+				pagPIX.pix = ler.pix();
 				break;
 			case 2:
 				System.out.println("Insira o seu E-mail: ");
-				pix = ler.pix();
+				pagPIX.pix = ler.pix();
 				break;
 			case 3:
 				System.out.println("Insira o seu celular: ");
-				pix = ler.pix();
+				pagPIX.pix = ler.pix();
 				break;
 			case 4:
-				System.out.println("Insira a sua chave aleatória: ");
-				pix = ler.pix();
+				System.out.println("Insira a sua chave aleatï¿½ria: ");
+				pagPIX.pix = ler.pix();
 				break;
 			}
 		} while(escolhaChave > 0 && escolhaChave < 5);

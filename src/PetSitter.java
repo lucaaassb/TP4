@@ -10,6 +10,10 @@ public class PetSitter {
 		this.celularPetSitter = celularPetSitter;
 	}
 
+	public PetSitter() {
+		
+	}
+
 	public String getNomePetSitter() {
 		return nomePetSitter;
 	}

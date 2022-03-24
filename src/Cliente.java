@@ -10,6 +10,10 @@ public class Cliente {
 		this.celularCliente = celularCliente;
 	}
 
+	public Cliente() {
+		
+	}
+
 	public String getNomeCliente() {
 		return nomeCliente;
 	}

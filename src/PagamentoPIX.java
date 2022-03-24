@@ -9,6 +9,10 @@ public class PagamentoPIX extends Pagamento{
 		this.chavePIX = pix;
 	}
 
+	public PagamentoPix() {
+		super();
+	}
+
 
 	public String getChavePIX() {
 		return chavePIX;

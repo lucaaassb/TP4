@@ -11,6 +11,10 @@ public class PagamentoCartaoDeCredito extends Pagamento{
 		this.codigoSeguranca = codigoSeguranca;
 	}
 
+	public PagamentoCartaoDeCredito () {
+		super();
+	}
+
 	public String getBandeiraCartao() {
 		return bandeiraCartao;
 	}
