@@ -122,5 +122,39 @@ public class DogInn {
 		celularPetSitter = ler.nextLine();
 	}
 	
+	public static void cadastrarChavePIX() {
+		Scanner ler = new.Scanner(System.in);
+		String pix;
+		int escolhaChave;
+		
+		System.out.println("Cadastro de Chave PIX");
+		System.out.println("1 - CPF/CNPJ");
+		System.out.println("2 - E-mail");
+		System.out.println("3 - Celular");
+		System.out.println("4 - Chave aleatória");
+		escolhaChave = ler.nextLine();
+		
+		do {
+			switch(pix) {
+			case 1:
+				System.out.println("Insira o seu CPF/CNPJ: ");
+				pix = ler.pix();
+				break;
+			case 2:
+				System.out.println("Insira o seu E-mail: ");
+				pix = ler.pix();
+				break;
+			case 3:
+				System.out.println("Insira o seu celular: ");
+				pix = ler.pix();
+				break;
+			case 4:
+				System.out.println("Insira a sua chave aleatória: ");
+				pix = ler.pix();
+				break;
+			}
+		} while(escolhaChave > 0 && escolhaChave < 5);
+	}
+	
 }
 
