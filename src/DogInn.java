@@ -2,36 +2,16 @@ import java.util.Scanner;
 
 public class DogInn {
 	public static void main(String[] args) {
-//	
-//		
-//		
-//		
-//		
-//		Servico servico = new Servico(1);
-		
-
-//		Imprimindo dados do usuario
-//		cliente.imprimirCliente(cliente);
 //		=================================================================================================
 //		
-//		Imprimindo dados do valor do pagamento e da CHAVE PIX
-//		pagPIX.imprimirChavePIX(pagPIX);
 //		=================================================================================================
 //		
-//		Imprimindo dados do valor do pagamento e do cartao de credito
-//		pagCred.imprimirCartaoDeCredito(pagCred);
 //		=================================================================================================
 //		
-//		Imprimindo dados do pet 
-//		pet.imprimirPet(pet);
 //		=================================================================================================
 //		
-//		Imprimindo dados do Pet Sitter
-//		babaPet.imprimirBaba(babaPet);
 //		=================================================================================================
 //		
-//		Imprimindo dados do tipo de servico
-//		servico.imprimirServico(servico);
 //		=================================================================================================
 	}
 	
