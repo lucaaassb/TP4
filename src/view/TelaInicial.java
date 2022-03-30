@@ -46,6 +46,9 @@ public class TelaInicial implements ActionListener {
     	
     	if(src == cliente)
 			new TelaCliente();
+    	
+    	if(src == petSitter)
+    		new TelaSitter();
 		
 
     }
