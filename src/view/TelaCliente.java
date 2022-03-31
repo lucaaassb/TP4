@@ -30,7 +30,7 @@ public class TelaCliente implements ActionListener {
 	}
 	
 	public static void main(String[] args) {
-		TelaInicial menu = new TelaInicial();
+		TelaCliente menu = new TelaCliente();
 
         login.addActionListener(menu);
     }
@@ -40,7 +40,7 @@ public class TelaCliente implements ActionListener {
         // TODO Auto-generated method stub
     	Object src = e.getSource();
     	
-    	if(src == login)
+    	if(src==login)
 			new LoginCliente();
 
     }

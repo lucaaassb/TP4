@@ -37,8 +37,8 @@ public class LoginCliente implements ActionListener {
         janela.setVisible(true);
 	}
 	
-	public static void main(String[] args) {
-		 TelaCliente menu = new TelaCliente();
+	public static void main(final String[] args) {
+		 LoginCliente menu = new LoginCliente();
 
 	     login.addActionListener(menu);
 	}
