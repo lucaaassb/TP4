@@ -30,15 +30,18 @@ public class TelaCliente implements ActionListener {
 	}
 	
 	public static void main(String[] args) {
-        TelaInicial menu = new TelaInicial();
+		TelaInicial menu = new TelaInicial();
 
         login.addActionListener(menu);
-        cadastro.addActionListener(menu);
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
         // TODO Auto-generated method stub
+    	Object src = e.getSource();
+    	
+    	if(src == login)
+			new LoginCliente();
 
     }
 

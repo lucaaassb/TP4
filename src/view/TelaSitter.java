@@ -33,12 +33,15 @@ public class TelaSitter implements ActionListener {
         TelaInicial menu = new TelaInicial();
 
         login.addActionListener(menu);
-        cadastro.addActionListener(menu);
     }
 	
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
+		Object src = e.getSource();
+    	
+    	if(src == login)
+			new LoginSitter();
 		
 	}
 
