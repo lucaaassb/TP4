@@ -1,3 +1,4 @@
+package modelo;
 
 public class Servico {
 	private String tipoServico;

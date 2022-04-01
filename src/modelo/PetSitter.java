@@ -1,3 +1,4 @@
+package modelo;
 public class PetSitter {
 	String nomePetSitter, sobrenomePetSitter, emailPetSitter, enderecoPetSitter, senhaPetSitter, celularPetSitter;
 	

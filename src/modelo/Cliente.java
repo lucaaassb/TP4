@@ -1,3 +1,4 @@
+package modelo;
 public class Cliente {
 	String nomeCliente, sobrenomeCliente, emailCliente, enderecoCliente, senhaCliente, celularCliente;
 

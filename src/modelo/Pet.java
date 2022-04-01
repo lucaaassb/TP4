@@ -1,3 +1,4 @@
+package modelo;
 public class Pet {
 	String raca, tamanho, sexo, nome;
 	double peso;

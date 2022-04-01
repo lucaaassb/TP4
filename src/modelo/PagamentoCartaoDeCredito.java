@@ -1,4 +1,4 @@
-
+package modelo;
 public class PagamentoCartaoDeCredito extends Pagamento{
 	private String bandeiraCartao, numeroCartao, dataValidade, titularCartao, codigoSeguranca;
 	
