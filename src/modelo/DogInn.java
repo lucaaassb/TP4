@@ -17,7 +17,7 @@ public class DogInn {
 	}
 	
 	public static void cadastrarCliente() {
-		Scanner ler = new.Scanner(System.in);
+		Scanner ler = new Scanner(System.in);
 		Cliente cliente = new Cliente();
 		
 		System.out.println("Digite o nome: ");
@@ -40,7 +40,7 @@ public class DogInn {
 	}
 	
 	public static void cadastrarPet() {
-		Scanner ler = new.Scanner(System.in);
+		Scanner ler = new Scanner(System.in);
 		Pet pet = new Pet();
 		
 		System.out.println("Digite a raca do pet: ");
